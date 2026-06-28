@@ -1,35 +1,35 @@
+## Instrucciones de Instalación y Uso
 
-# Códigos del Robot
+### Clonar el repositorio
 
-Este repositorio contiene los programas utilizados para el funcionamiento del robot, desarrollados para un Arduino Mega 2560 y un ESP32.
-
-## Archivos
-
-- `ULTRA_ARDU.ino`: Control del sensor ultrasónico y comunicación con el ESP32.
-- `ULTRA_ESP32.ino`: Servidor web y comunicación WiFi.
-
-## Instalación
-
-1. Clonar el repositorio:
+Clonar el repositorio del proyecto utilizando el siguiente comando:
 
 ```bash
-git clone https://github.com/baston444/C-digos-del-robot.git
+git clone https://github.com/YisusTLL/PROY-2026-GRUPO-12.git
 ```
 
-2. Abrir los archivos `.ino` en Arduino IDE.
+Ingresar a la carpeta del proyecto:
 
-3. Instalar las librerías necesarias:
+```bash
+cd PROY-2026-GRUPO-12
+```
 
-- WiFi
-- WebServer
-- Wire
-- Adafruit GFX
-- Adafruit SSD1306
+### Dependencias
 
-4. Configurar las credenciales WiFi antes de cargar el programa al ESP32.
+Antes de ejecutar el proyecto, instalar **Arduino IDE 2.x** y la tarjeta **ESP32 by Espressif Systems** desde el Gestor de tarjetas.
 
-## Hardware utilizado
+Además, instalar las siguientes librerías desde el Administrador de Bibliotecas de Arduino IDE:
 
-- Arduino Mega 2560
-- ESP32
-- Sensor ultrasónico HC-SR04
+* WiFi
+* WebServer
+* Wire
+* Adafruit GFX Library
+* Adafruit SSD1306
+
+### Ejecución
+
+1. Configurar las credenciales de la red WiFi en el archivo `ULTRA_ESP32.ino`.
+2. Cargar `ULTRA_ESP32.ino` en la placa ESP32.
+3. Cargar `ULTRA_ARDU.ino` en la placa Arduino Mega 2560.
+4. Verificar que ambos dispositivos estén correctamente conectados.
+5. Al iniciar el sistema, el Arduino enviará automáticamente las mediciones del sensor ultrasónico al ESP32 mediante la red WiFi.
