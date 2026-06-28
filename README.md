@@ -1,3 +1,12 @@
+# Códigos del Robot
+
+Este repositorio contiene los programas utilizados por el robot del proyecto **PROY-2026-GRUPO-12**.
+
+Aquí se encuentran los códigos correspondientes al **Arduino Mega 2560** y al **ESP32**, encargados de la lectura del sensor ultrasónico y de la comunicación mediante WiFi.
+
+> **Nota:** Este repositorio forma parte del proyecto principal **PROY-2026-GRUPO-12** y contiene únicamente los códigos necesarios para el funcionamiento del robot.
+
+
 ## Instrucciones de Instalación y Uso
 
 ### Clonar el repositorio
