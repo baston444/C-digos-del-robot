@@ -1,4 +1,4 @@
-# C-digos-del-robot
+
 # Códigos del Robot
 
 Este repositorio contiene los programas utilizados para el funcionamiento del robot, desarrollados para un Arduino Mega 2560 y un ESP32.
